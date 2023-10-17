@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import { useTheme } from '@geist-ui/core'
+import { Collapse, useTheme } from '@geist-ui/core'
 import { Image, Display, Divider, Text, Description, Grid, Spacer, Page, Card, Button } from '@geist-ui/core'
-import { Calendar, MapPin, Globe, Home } from '@geist-ui/icons'
+import { Calendar, MapPin, Gift, Users } from '@geist-ui/icons'
 
 export default function HomePage() {
   const { palette } = useTheme()
@@ -57,18 +57,38 @@ export default function HomePage() {
               <Description title={<Text h4>Dec 7-9, 2023</Text>} content={<Text p>December 7 - pre-event, December 8-9 - Hackathon</Text>} />
             </Grid>
             <Grid xs={12}>
-              <Globe size={64} color="green"/>
+              <Users size={64} color="green"/>
               <Spacer x={0.5} />
-              <Description title={<Text h4>Theme</Text>} content={<Text p>Use Generative AI for Education, Social Good, and many other </Text>} />
+              <Description title={<Text h4>Participants</Text>} content={<Text p>You have to work as teams. Bring your own team or join others.</Text>} />
             </Grid>
             <Grid xs={12}>
-              <Home size={64} color="green"/>
+              <Gift size={64} color="green"/>
               <Spacer x={0.5} />
-              <Description title={<Text h4>Theme</Text>} content={<Text p>Use Generative AI for Education, Social Good, and many other </Text>} />
+              <Description title={<Text h4>Prize</Text>} content={<Text p>The product you build will be judged, and the winner team will win a monetory prize</Text>} />
             </Grid>
           </Grid.Container>
 
         <Spacer h={8} />
+
+            <Text h2 type="secondary">Themes</Text>
+            <Collapse.Group>
+              <Collapse title="Education">
+                <Text p>Use Generative AI for Education</Text>
+              </Collapse>
+              <Collapse title="Social Good">
+                <Text p>Use Generative AI for Social Good</Text>
+              </Collapse>
+              <Collapse title="Healthcare">
+                <Text p>Use Generative AI for Healthcare</Text>
+              </Collapse>
+              <Collapse title="Innovative Ideas">
+                <Text p>Use Generative AI for Entertainment</Text>
+              </Collapse>
+            </Collapse.Group>
+
+
+        <Spacer h={8} />
+
 
             <Text h2 type="secondary">Partners and Sponsors</Text>
           <Spacer y={2} />
