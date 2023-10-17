@@ -19,13 +19,17 @@ export default function HomePage() {
         <Card height="500px" style={{
           backgroundImage: "url('/main-background.png')",
           backgroundSize: 'cover',
-          backgroundPosition: 'center'
+          backgroundPosition: 'center',
+          borderWidth: '2px', // Set border width
+          borderColor: 'transparent',
+          borderStyle: 'solid',
+          animation: 'signalTravel 4s infinite linear',
         }}>
           <Card.Content style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', height: "100%"}}>
             <Text h1 type="default" align="center" style={{ color: palette.accents_2, background: palette.background}}>Generative AI Hackathon</Text>
             <Text span align="center" style={{ color: palette.accents_2, background: palette.background}}>December 7-9, 2023</Text>
             <Text span align="center" style={{ color: palette.accents_2, background: palette.background}}>Multi-purpose Room</Text>
-            <Text span align="center" style={{ color: palette.accents_2, background: palette.background}}>QCRI, Doha</Text>
+            <Text span align="center" style={{ color: palette.accents_2, background: palette.background}}>Qatar Computing Research Institute, Doha</Text>
           </Card.Content>
         </Card>
 
@@ -66,7 +70,7 @@ export default function HomePage() {
 
         <Spacer h={8} />
 
-            <Text h2 type="secondary">Sponsors</Text>
+            <Text h2 type="secondary">Partners and Sponsors</Text>
           <Spacer y={2} />
           <Grid.Container gap={2} justify="center">
             <Grid xs={6}>

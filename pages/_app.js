@@ -1,4 +1,5 @@
 import { GeistProvider, CssBaseline, Themes } from '@geist-ui/core'
+import styles from '../styles/globals.css'
 
 const futuristic = Themes.createFromLight({
   type: 'futuristic',
