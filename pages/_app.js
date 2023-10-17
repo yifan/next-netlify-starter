@@ -116,10 +116,11 @@ const technology = Themes.createFromLight({
     mono: '"Fira Code", monospace', // A font designed for code, which could match your technology-oriented style.
   },
 })
+    //themes={[futuristic, technology, futuristic2]} themeType='futuristic2'>
 
 const App = ({ Component, pageProps }) => {
   return (
-    <GeistProvider themes={[futuristic, technology, futuristic2]} themeType='futuristic2'>
+    <GeistProvider themeType="light"> 
       <CssBaseline />
       <Component {...pageProps} />
     </GeistProvider>

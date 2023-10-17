@@ -49,22 +49,22 @@ export default function HomePage() {
             <Grid xs={12}>
               <MapPin size={64} color="green" />
               <Spacer x={0.5} />
-              <Description title={<Text h4>In-Person</Text>} content={<Text p>This event will be held at QCRI</Text>} />
+              <Description title={<Text h4>In-Person</Text>} content={<Text p align="left">This event will be held at QCRI</Text>} />
             </Grid>
             <Grid xs={12}>
               <Calendar size={64} color="green"/>
               <Spacer x={0.5} />
-              <Description title={<Text h4>Dec 7-9, 2023</Text>} content={<Text p>December 7 - pre-event, December 8-9 - Hackathon</Text>} />
+              <Description title={<Text h4>Dec 7-9, 2023</Text>} content={<Text p align="left">December 7 - pre-event, December 8-9 - Hackathon</Text>} />
             </Grid>
             <Grid xs={12}>
               <Users size={64} color="green"/>
               <Spacer x={0.5} />
-              <Description title={<Text h4>Participants</Text>} content={<Text p>You have to work as teams. Bring your own team or join others.</Text>} />
+              <Description title={<Text h4>Participants</Text>} content={<Text p align="left">You have to work as teams. Bring your own team or join others.</Text>} />
             </Grid>
             <Grid xs={12}>
               <Gift size={64} color="green"/>
               <Spacer x={0.5} />
-              <Description title={<Text h4>Prize</Text>} content={<Text p>The product you build will be judged, and the winner team will win a monetory prize</Text>} />
+              <Description title={<Text h4>Prize</Text>} content={<Text p align="left">The product you build will be judged, and the winner team will win a monetory prize</Text>} />
             </Grid>
           </Grid.Container>
 
