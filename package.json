@@ -8,6 +8,8 @@
     "export": "next export"
   },
   "dependencies": {
+    "@geist-ui/core": "^2.3.8",
+    "@geist-ui/icons": "^1.0.2",
     "cypress": "^10.0.3",
     "next": "^12.1.5",
     "react": "^18.0.0",
