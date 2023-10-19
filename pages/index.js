@@ -39,15 +39,15 @@ export default function HomePage() {
       <Page align="center">
           <Text h1 align="center" style={{ color: palette.successLight}}> Why Participate? </Text>
             <Text p>
-              Generative AI stands at the forefront of rapid technological advancement, harnessing machine learning algorithms to create fresh and innovative content, ranging from images and music to complete narratives. Join us as we delve into this dynamic realm for an extraordinary hackathon event that brings together developers, data scientists, and AI enthusiasts.
+              <Text span b>Generative AI</Text> stands at the forefront of rapid technological advancement, harnessing machine learning algorithms to create fresh and innovative content, ranging from images and music to complete narratives. Join us as we delve into this dynamic realm for an extraordinary hackathon event that brings together developers, data scientists, and AI enthusiasts.
             </Text>
 
             <Text p>
-              During this hackathon, participants will gain hands-on experience in diverse generative AI projects. This includes constructing their own models, experimenting with existing ones, and exploring groundbreaking applications for this cutting-edge technology. Whether you're an accomplished AI expert or just embarking on your journey, our hackathon offers an ideal platform to acquire new skills, connect with kindred spirits, and push the boundaries of generative AI's limitless potential.
+              During this hackathon, participants will gain hands-on experience in diverse <Text span b>Generative AI</Text> projects. This includes constructing their own models, experimenting with existing ones, and exploring groundbreaking applications for this cutting-edge technology. Whether you're an accomplished AI expert or just embarking on your journey, our hackathon offers an ideal platform to acquire new skills, connect with kindred spirits, and push the boundaries of generative AI's limitless potential.
             </Text>
 
             <Text p>
-              If you're eager to immerse yourself in this thrilling universe, seize the opportunity to register for the hackathon today. Join us for an unforgettable weekend of innovation, collaboration, and creativity!
+              If you're eager to immerse yourself in this thrilling universe, seize the opportunity to register for the hackathon today. Join us for an unforgettable weekend of <Text span b>innovation</Text>, <Text span b>collaboration</Text>, and <Text span b>creativity</Text>!
             </Text>
 
         <Spacer h={4} />
@@ -64,22 +64,22 @@ export default function HomePage() {
           <Spacer y={2} />
           <Grid.Container gap={8} justify="center">
             <Grid xs={12}>
-              <MapPin size={64} color="green" />
+              <MapPin size={64} color="blue" />
               <Spacer x={0.5} />
               <Description title={<Text h4>In-Person</Text>} content={<Text p align="left">This event will be held locally in QCRI, Doha, Qatar</Text>} />
             </Grid>
             <Grid xs={12}>
-              <Calendar size={64} color="green"/>
+              <Calendar size={64} color="blue"/>
               <Spacer x={0.5} />
               <Description title={<Text h4>Dec 7-9</Text>} content={<Text p align="left">December 7 - pre-event, December 8-9 - Hackathon</Text>} />
             </Grid>
             <Grid xs={12}>
-              <Users size={64} color="green"/>
+              <Users size={64} color="blue"/>
               <Spacer x={0.5} />
               <Description title={<Text h4>Take Part</Text>} content={<Text p align="left">Participate as a team or join others during the event</Text>} />
             </Grid>
             <Grid xs={12}>
-              <Gift size={64} color="green"/>
+              <Gift size={64} color="blue"/>
               <Spacer x={0.5} />
               <Description title={<Text h4>Prize</Text>} content={<Text p align="left">Amazing prizes will be brought by you by our partners</Text>} />
             </Grid>
@@ -131,7 +131,7 @@ export default function HomePage() {
         <Spacer h={8} />
 
 
-            <Text h2 style={{ color: palette.successLight }}>Sponsor Us</Text>
+          <Text h1 style={{ color: palette.successLight }}>Sponsor Us</Text>
           <Spacer y={2} />
             <Collapse.Group>
               <Collapse title="Why Sponsor?">
@@ -154,15 +154,51 @@ export default function HomePage() {
                 </ul>
               </Collapse>
               <Collapse title="Technology Partner">
+                <ul align="left">
+                  <li>
+                    Provide access to your technology and expertise to help participants build innovative solutions.
+                  </li>
+                  <li>
+                    Company logo displayed on both website and during event.
+                  </li>
+                  <li>
+                    Company branded merchanise and promotional materials distributed during the event.
+                  </li>
+                </ul>
               </Collapse>
               <Collapse title="Platinum Sponsor">
+                <ul align="left">
+                  <li>
+                    Contribute QAR 20,000 towards a prize named after your company.
+                  </li>
+                  <li>
+                    Can provide a business challenge to serve as one of the hackathon's themes.
+                  </li>
+                  <li>
+                    Can serve as one of the external judges for the hackathon.
+                  </li>
+                  <li>
+                    Company logo displayed prodominately on both website and during event.
+                  </li>
+                </ul>
               </Collapse>
               <Collapse title="Gold Sponsor">
+                <li>
+                  Contribute QAR 5,000 towards the prize pool.
+                </li>
+                <li>
+                  Company logo will be displayed on both website and during event.
+                </li>
               </Collapse>
             </Collapse.Group>
 
         <Spacer h={8} />
-
+          <Text h2 style={{ color: palette.successLight }}>Qatar Computing Research Institute</Text>
+          <Text p align="left">
+            Qatar Computing Research Institute (QCRI) is a national research institute, established in 2010 by Qatar Foundation (QF) for Education, Science and Community Development, a private, non-profit organization that is supporting Qatar’s transformation from a carbon economy to a knowledge economy. QCRI operates under the umbrella of Hamad bin Khalifa University (HBKU).
+          </Text>
+          
+        <Spacer h={8} />
         <Page.Footer>
           <Text type="secondary" align="center" small>
             Copyright &copy; 2023, Qatar Computing Research Institute
