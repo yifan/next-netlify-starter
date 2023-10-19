@@ -183,12 +183,14 @@ export default function HomePage() {
                 </ul>
               </Collapse>
               <Collapse title="Gold Sponsor">
-                <li>
-                  Contribute QAR 5,000 towards the prize pool.
-                </li>
-                <li>
-                  Company logo will be displayed on both website and during event.
-                </li>
+                <ul align="left">
+                  <li>
+                    Contribute QAR 5,000 towards the prize pool.
+                  </li>
+                  <li>
+                    Company logo will be displayed on both website and during event.
+                  </li>
+                </ul>
               </Collapse>
             </Collapse.Group>
 
