@@ -54,8 +54,7 @@ code {
 /* Extra large devices (e.g., desktops) */
 @media (min-width: 1025px) {
   .logo {
-    font-size: 8em;
-    line-height: 8em;
+    font-size: 7em;
     -webkit-text-stroke: 1px #FFFFFF;
   }
 }

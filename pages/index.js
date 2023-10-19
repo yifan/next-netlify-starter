@@ -24,7 +24,7 @@ export default function HomePage() {
           borderStyle: 'solid',
           animation: 'signalTravel 4s infinite linear',
         }}>
-          <Card.Content style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', height: "100%"}}>
+          <Card.Content style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', }}>
             <Text p className="logo" b align="center" style={{ 
               color: palette.violetDark,
               webkitTextStroke: '1px #FFFFFF',
@@ -152,6 +152,12 @@ export default function HomePage() {
                     <Text b>Invest in the Future:</Text> Play an active role in shaping the technological landscape and community growth.
                   </li>
                 </ul>
+              </Collapse>
+              <Collapse title="Technology Partner">
+              </Collapse>
+              <Collapse title="Platinum Sponsor">
+              </Collapse>
+              <Collapse title="Gold Sponsor">
               </Collapse>
             </Collapse.Group>
 
