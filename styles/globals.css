@@ -34,6 +34,32 @@ code {
   align-items: center;
 } */
 
+/* Smaller devices (e.g., mobile phones) */
+@media (max-width: 600px) {
+  .logo {
+    font-size: 4em;
+    -webkit-text-stroke: 1px #FFFFFF;
+  }
+}
+
+/* Larger devices (e.g., tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .logo {
+    font-size: 5em;
+    line-height: 1em;
+    -webkit-text-stroke: 1px #FFFFFF;
+  }
+}
+
+/* Extra large devices (e.g., desktops) */
+@media (min-width: 1025px) {
+  .logo {
+    font-size: 8em;
+    line-height: 8em;
+    -webkit-text-stroke: 1px #FFFFFF;
+  }
+}
+
 @keyframes signalTravel {
   0% {
     border-color: transparent;

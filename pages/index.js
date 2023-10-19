@@ -15,8 +15,7 @@ export default function HomePage() {
         <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"/>
       </Head>
 
-      <Page align="center">
-        <Card height="500px" style={{
+        <Card height="500px" width="100%" style={{
           backgroundImage: "url('/main-background.png')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
@@ -26,63 +25,105 @@ export default function HomePage() {
           animation: 'signalTravel 4s infinite linear',
         }}>
           <Card.Content style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', height: "100%"}}>
-            <Text h1 type="default" align="center" style={{ color: palette.accents_2, background: palette.background}}>Generative AI Hackathon</Text>
-            <Text span align="center" style={{ color: palette.accents_2, background: palette.background}}>December 7-9, 2023</Text>
-            <Text span align="center" style={{ color: palette.accents_2, background: palette.background}}>Multi-purpose Room</Text>
-            <Text span align="center" style={{ color: palette.accents_2, background: palette.background}}>Qatar Computing Research Institute, Doha</Text>
+            <Text p className="logo" b align="center" style={{ 
+              color: palette.violetDark,
+              webkitTextStroke: '1px #FFFFFF',
+             }}>Generative AI Hackathon</Text>
+            <Text span b align="center" font="1.4em" style={{ color: palette.alert, webkitTextStroke: '1px #330000', }}>Dec 7-9, 2023</Text>
+            <Text span b align="center" font="1.1em" style={{ color: palette.alert, webkitTextStroke: '1px #330000', }}>Qatar Computing Research Institute, Doha</Text>
           </Card.Content>
         </Card>
 
         <Spacer h={8} />
 
-          <Text h2 align="center" style={{ color: palette.accents_2}}> What is Generative AI? </Text>
-          <Text blockquote align="center">
-          Generative AI is an emerging technology that has been growing in popularity due to its tremendous potential for a wide range of applications. At its core, it is an artificial intelligence system designed to generate content, such as text, images, or music, for a variety of purposes. One notable example of such technology is ChatGPT, which has the ability to create human-like responses in the context of a conversation. The advancement of generative AI has enabled more efficient solutions for numerous industries, such as customer service, content creation, and entertainment. Its continued development promises to reshape how we interact with technology, leading to more seamless and efficient AI-driven experiences, and unlocking new opportunities for personalized, engaging, and creative interactions.
-          </Text>
-          <Button type="success">Register Now!</Button>
+      <Page align="center">
+          <Text h1 align="center" style={{ color: palette.successLight}}> Why Participate? </Text>
+            <Text p>
+              Generative AI stands at the forefront of rapid technological advancement, harnessing machine learning algorithms to create fresh and innovative content, ranging from images and music to complete narratives. Join us as we delve into this dynamic realm for an extraordinary hackathon event that brings together developers, data scientists, and AI enthusiasts.
+            </Text>
 
-        <Spacer h={8} />
+            <Text p>
+              During this hackathon, participants will gain hands-on experience in diverse generative AI projects. This includes constructing their own models, experimenting with existing ones, and exploring groundbreaking applications for this cutting-edge technology. Whether you're an accomplished AI expert or just embarking on your journey, our hackathon offers an ideal platform to acquire new skills, connect with kindred spirits, and push the boundaries of generative AI's limitless potential.
+            </Text>
 
-            <Text h2 style={{ color: palette.accents_2}}>Event Details</Text>
+            <Text p>
+              If you're eager to immerse yourself in this thrilling universe, seize the opportunity to register for the hackathon today. Join us for an unforgettable weekend of innovation, collaboration, and creativity!
+            </Text>
+
+        <Spacer h={4} />
+          <a href="https://app.micetribe.com/public/workspaces/qcri/events/4429qcri/forms/attendees">
+            <Button type="success">Register Now!</Button>
+          </a>
+        <Spacer h={1} />
+          <a href="https://join.slack.com/t/hbku-global/shared_invite/zt-23u6q4r4z-iohL9TZlqNuHuMl_gC4LoQ">
+            <Button type="voilet">Join Slack</Button>
+          </a>
+        <Spacer h={4} />
+
+          <Text h1 align="center" style={{ color: palette.successLight}}>Event Details</Text>
           <Spacer y={2} />
           <Grid.Container gap={8} justify="center">
             <Grid xs={12}>
               <MapPin size={64} color="green" />
               <Spacer x={0.5} />
-              <Description title={<Text h4>In-Person</Text>} content={<Text p align="left">This event will be held at QCRI</Text>} />
+              <Description title={<Text h4>In-Person</Text>} content={<Text p align="left">This event will be held locally in QCRI, Doha, Qatar</Text>} />
             </Grid>
             <Grid xs={12}>
               <Calendar size={64} color="green"/>
               <Spacer x={0.5} />
-              <Description title={<Text h4>Dec 7-9, 2023</Text>} content={<Text p align="left">December 7 - pre-event, December 8-9 - Hackathon</Text>} />
+              <Description title={<Text h4>Dec 7-9</Text>} content={<Text p align="left">December 7 - pre-event, December 8-9 - Hackathon</Text>} />
             </Grid>
             <Grid xs={12}>
               <Users size={64} color="green"/>
               <Spacer x={0.5} />
-              <Description title={<Text h4>Participants</Text>} content={<Text p align="left">You have to work as teams. Bring your own team or join others.</Text>} />
+              <Description title={<Text h4>Take Part</Text>} content={<Text p align="left">Participate as a team or join others during the event</Text>} />
             </Grid>
             <Grid xs={12}>
               <Gift size={64} color="green"/>
               <Spacer x={0.5} />
-              <Description title={<Text h4>Prize</Text>} content={<Text p align="left">The product you build will be judged, and the winner team will win a monetory prize</Text>} />
+              <Description title={<Text h4>Prize</Text>} content={<Text p align="left">Amazing prizes will be brought by you by our partners</Text>} />
             </Grid>
           </Grid.Container>
 
-        <Spacer h={8} />
+        <Spacer h={4} />
+          <a href="https://app.micetribe.com/public/workspaces/qcri/events/4429qcri/forms/attendees">
+            <Button type="success">Register Now!</Button>
+          </a>
+        <Spacer h={4} />
 
-            <Text h2 type="secondary">Themes</Text>
+            <Text h1 align="center" style={{ color: palette.successLight}}>Ideas</Text>
             <Collapse.Group>
               <Collapse title="Education">
-                <Text p>Use Generative AI for Education</Text>
+                <Text p align="left">
+                  Developing generative AI applications for education is essential because it can revolutionize personalized learning, tailoring educational content to individual student needs, strengths, and learning styles. Furthermore, it offers scalable solutions to address educational disparities by providing consistent, high-quality resources to diverse learners globally.
+                </Text>
+                <Text p align="left">
+                  Unlock the future of personalized learning with generative AI! Tailor education to every student's unique strengths and bridge global educational gaps with consistent, top-tier resources. Dive into the revolution today!
+                </Text>
               </Collapse>
               <Collapse title="Social Good">
-                <Text p>Use Generative AI for Social Good</Text>
+                <Text p align="left">
+                  The complexities of modern society, from managing vast data sets in healthcare to addressing urban infrastructure needs, often surpass human analytical capacities. AI can step in as a transformative tool, enabling precise predictions in climate change modeling, optimizing resource allocation in social programs, and fostering global collaborations through real-time language translations.
+                </Text>
+                <Text p align="left">
+                  Empower change with generative AI for Social Good! Harness the power of technology to drive impactful solutions, uplift communities, and create a brighter, more equitable world. Join the movement and make a difference today!
+                </Text>
               </Collapse>
               <Collapse title="Healthcare">
-                <Text p>Use Generative AI for Healthcare</Text>
+                <Text p align="left">
+                  The healthcare sector grapples with the overwhelming task of processing vast amounts of patient data, often leading to diagnostic delays and treatment inefficiencies. AI can assist by enabling swift and accurate diagnostics, predicting patient-specific treatment outcomes, and optimizing hospital resource allocation, ensuring timely and personalized care for all.
+                </Text>
+                <Text p align="left">
+                  Transform healthcare with generative AI! Dive into a new era of swift diagnostics, personalized treatments, and optimized patient care.
+                </Text>
               </Collapse>
-              <Collapse title="Innovative Ideas">
-                <Text p>Use Generative AI for Entertainment</Text>
+              <Collapse title="Innovation">
+                <Text p align="left">
+                  Generative AI's potential is truly limitless, transcending the boundaries of healthcare, social good, and education. As the technology evolves, we'll see it reshaping industries we haven't even considered yet, from entertainment and arts to urban planning and space exploration. Its adaptability and expansive capabilities position it as a tool that can revolutionize not just specific sectors, but the very fabric of our daily lives and future endeavors.
+                </Text>
+                <Text p align="left">
+                  We encourage everyone to harness the power of generative AI, bringing forward your innovative ideas to craft unparalleled value for society. Let's collaborate and shape a brighter, more imaginative future together!
+                </Text>
               </Collapse>
             </Collapse.Group>
 
@@ -90,28 +131,29 @@ export default function HomePage() {
         <Spacer h={8} />
 
 
-            <Text h2 type="secondary">Partners and Sponsors</Text>
+            <Text h2 style={{ color: palette.successLight }}>Sponsor Us</Text>
           <Spacer y={2} />
-          <Grid.Container gap={2} justify="center">
-            <Grid xs={6}>
-              <Card shadow width="100%">
-                <Text h4>Sponsor Name</Text>
-                <Image src="/hackathon-logo.png" width="300px" height="180px" />
-              </Card>
-            </Grid>
-            <Grid xs={6}>
-              <Card shadow width="100%">
-                <Text h4 type="warning">Sponsor Name</Text>
-                <Image src="/hackathon-logo.png" width="300px" height="180px" />
-              </Card>
-            </Grid>
-            <Grid xs={6}>
-              <Card shadow width="100%">
-                <Text h4 type="link">Sponsor Name</Text>
-                <Image src="/hackathon-logo.png" width="300px" height="180px" />
-              </Card>
-            </Grid>
-          </Grid.Container>
+            <Collapse.Group>
+              <Collapse title="Why Sponsor?">
+                <ul align="left">
+                  <li>
+                    <Text b>Foster Regional Talent:</Text> Position your company as a champion of local innovation and talent development.
+                  </li>
+                  <li>
+                    <Text b>Drive Innovation:</Text> Stay at the cutting-edge by supporting and catalyzing new technological breakthroughs.
+                  </li>
+                  <li>
+                    <Text b>Promote Products & Image:</Text> Utilize the hackathon as a platform to showcase your products and enhance brand visibility.
+                  </li>
+                  <li>
+                    <Text b>Build Connections:</Text> Establish valuable relationships with participants, potential future collaborators, and innovators.
+                  </li>
+                  <li>
+                    <Text b>Invest in the Future:</Text> Play an active role in shaping the technological landscape and community growth.
+                  </li>
+                </ul>
+              </Collapse>
+            </Collapse.Group>
 
         <Spacer h={8} />
 
