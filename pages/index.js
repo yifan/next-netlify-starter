@@ -159,7 +159,7 @@ export default function HomePage() {
                     Provide access to your technology and expertise to help participants build innovative solutions.
                   </li>
                   <li>
-                    Company logo displayed on both website and during event.
+                    A large company logo displayed on both website and during event.
                   </li>
                   <li>
                     Company branded merchanise and promotional materials distributed during the event.
@@ -178,17 +178,17 @@ export default function HomePage() {
                     Can serve as one of the external judges for the hackathon.
                   </li>
                   <li>
-                    Company logo displayed prodominately on both website and during event.
+                    A large company logo displayed prominently on both website and during event.
                   </li>
                 </ul>
               </Collapse>
               <Collapse title="Gold Sponsor">
                 <ul align="left">
                   <li>
-                    Contribute QAR 5,000 towards the prize pool.
+                    Contribute QAR 10,000 towards the prize pool.
                   </li>
                   <li>
-                    Company logo will be displayed on both website and during event.
+                    A company logo will be displayed on both website and during event.
                   </li>
                 </ul>
               </Collapse>
