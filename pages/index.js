@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import { Collapse, useTheme } from '@geist-ui/core'
 import { Image, Display, Divider, Text, Description, Grid, Spacer, Page, Card, Button } from '@geist-ui/core'
 import { Calendar, MapPin, Gift, Users } from '@geist-ui/icons'
@@ -59,6 +60,24 @@ export default function HomePage() {
             <Button type="voilet">Join Slack</Button>
           </a>
         <Spacer h={4} />
+
+        <Text h1 style={{ color: palette.successLight }}>Pre-Hackathon</Text>
+        <Grid.Container>
+          <Grid xs={24} md={8}>
+            <Card width='100%' shadow align="left">
+              <Image my={0}
+                src="https://media.licdn.com/dms/image/D4D22AQGwPAvGtkk_kw/feedshare-shrink_1280/0/1698005401661?e=1701302400&v=beta&t=VRKRE0nlKzARuqWds7esNb2w-z6YyDAWnaDsfKmhhtw"
+              />
+              <Text p my={0} small>📅 Date: October 29, 2023</Text>
+              <Text p mt={0} mb={1} small>⏰ Time: 10:00 to 12:00 (GMT+3)</Text>
+              <div align="right">
+                <Link target="_blank" href="https://www.linkedin.com/posts/firoj-alam-0a96206_llms-benchmarking-workshop-activity-7121950851526504448-kDGi/?utm_source=share&utm_medium=member_desktop"><Button scale={.25}>click for details</Button></Link>
+              </div>
+            </Card>
+          </Grid>
+        </Grid.Container>
+
+        <Spacer h={8} />
 
           <Text h1 align="center" style={{ color: palette.successLight}}>Event Details</Text>
           <Spacer y={2} />
