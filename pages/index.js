@@ -62,6 +62,31 @@ export default function HomePage() {
           </a>
         <Spacer h={4} />
 
+        <Grid.Container gap={12} justify="center">
+          <Grid >
+            <div style={{ display: 'flex', flexDirection: 'column', padding: 8, background: palette.successLighter, width: '12em' }}>
+              <div style={{ flex: '1' }}>
+              <Text h4 align="center" style={{ color: palette.successLight }}>Registrations</Text>
+              </div>
+              <div style={{ flex: 'none' }}>
+              <Text h1 align="center" style={{ color: palette.success }}>127</Text>
+              </div>
+            </div>
+          </Grid>
+          <Grid>
+            <div style={{ display: 'flex', flexDirection: 'column', padding: 8, background: palette.successLighter, width: '12em' }}>
+              <div style={{ flex: '1' }}>
+              <Text h4 align="center" style={{ color: palette.successLight }}>Countries</Text>
+              </div>
+              <div style={{ flex: 'none' }}>
+              <Text h1 align="center" style={{ color: palette.success }}>10</Text>
+              </div>
+            </div>
+          </Grid>
+        </Grid.Container>
+
+        <Spacer h={4} />
+
         <Text h1 style={{ color: palette.successLight }}>Pre-Hackathon</Text>
         <Grid.Container>
           <Grid xs={24} md={8}>
