@@ -4,6 +4,7 @@ import { Collapse, useTheme } from '@geist-ui/core'
 import { Image, Display, Divider, Text, Description, Grid, Spacer, Page, Card, Button } from '@geist-ui/core'
 import { Calendar, MapPin, Gift, Users } from '@geist-ui/icons'
 
+
 export default function HomePage() {
   const { palette } = useTheme()
 
@@ -76,6 +77,24 @@ export default function HomePage() {
             </Card>
           </Grid>
         </Grid.Container>
+
+        <Spacer h={8} />
+
+        <Text h1 align="center" style={{ color: palette.successLight}}>Sponsors</Text>
+        <Grid.Container gap={4} justify="center">
+          <Grid xs={12}>
+            <Image src="https://pbs.twimg.com/profile_images/934717921816993793/H1vB6P7o_400x400.jpg" />
+          </Grid>
+        </Grid.Container>
+        <Grid.Container gap={3} justify="center">
+          <Grid xs={3}>
+            <Image src="https://pbs.twimg.com/profile_images/808330362417979392/AdiQ86lk_400x400.jpg" />
+          </Grid>
+          <Grid xs={3}>
+            <Image src="https://pbs.twimg.com/profile_images/1617899591436800000/Zymwna4V_400x400.jpg" />
+          </Grid>
+        </Grid.Container>
+
 
         <Spacer h={8} />
 
