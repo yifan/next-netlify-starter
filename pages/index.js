@@ -104,7 +104,7 @@ export default function HomePage() {
           <Grid xs={24} md={12}>
             <Card width='100%' shadow align="left">
               <Image my={0}
-                src="http://events.adlqatar.qa/assets/img/invite.png"
+                src="/event2.png"
               />
               <Text p my={0} small>📅 Date: November 20, 2023</Text>
               <Text p mt={0} mb={1} small>⏰ Time: 16:00 to 18:00 (GMT+3)</Text>
