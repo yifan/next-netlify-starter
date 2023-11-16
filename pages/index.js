@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { Collapse, useTheme } from '@geist-ui/core'
-import { Image, Display, Divider, Text, Description, Grid, Spacer, Page, Card, Button } from '@geist-ui/core'
+import { Collapse, Note, Table, useTheme } from '@geist-ui/core'
+import { Image, Text, Description, Grid, Spacer, Page, Card, Button } from '@geist-ui/core'
 import { Calendar, MapPin, Gift, Users } from '@geist-ui/icons'
 
 
@@ -88,8 +88,8 @@ export default function HomePage() {
         <Spacer h={4} />
 
         <Text h1 style={{ color: palette.successLight }}>Pre-Hackathon</Text>
-        <Grid.Container>
-          <Grid xs={24} md={8}>
+        <Grid.Container gap={2}>
+          <Grid xs={24} md={12}>
             <Card width='100%' shadow align="left">
               <Image my={0}
                 src="https://media.licdn.com/dms/image/D4D22AQGwPAvGtkk_kw/feedshare-shrink_1280/0/1698005401661?e=1701302400&v=beta&t=VRKRE0nlKzARuqWds7esNb2w-z6YyDAWnaDsfKmhhtw"
@@ -101,6 +101,19 @@ export default function HomePage() {
               </div>
             </Card>
           </Grid>
+          <Grid xs={24} md={12}>
+            <Card width='100%' shadow align="left">
+              <Image my={0}
+                src="http://events.adlqatar.qa/assets/img/invite.png"
+              />
+              <Text p my={0} small>📅 Date: November 20, 2023</Text>
+              <Text p mt={0} mb={1} small>⏰ Time: 16:00 to 18:00 (GMT+3)</Text>
+              <Text p mt={0} mb={1} small>📍 Innovation Cafe at the Pearl - Qatar </Text>
+              <div align="right">
+                <Link target="_blank" href="http://events.adlqatar.qa/#undefined?fbclid=PAAab34f2k7ZGKoRpL0OmI3yq7ietlMkFrRIL56qdMWJnN9dfULfAUj8MP9gg_aem_AfohzJVRBkzI7Bfaj7GXHKI-wzLD7QVHn3uO0BmUJV9VPL_tkxpN_WBZHuVMyB946Dc"><Button scale={.25}>click for details</Button></Link>
+              </div>
+            </Card>
+          </Grid>
         </Grid.Container>
 
         <Spacer h={8} />
@@ -108,15 +121,15 @@ export default function HomePage() {
         <Text h1 align="center" style={{ color: palette.successLight}}>Sponsors</Text>
         <Grid.Container gap={4} justify="center">
           <Grid xs={12}>
-            <Image src="https://pbs.twimg.com/profile_images/934717921816993793/H1vB6P7o_400x400.jpg" />
+            <Image src="/shell.jpg" />
           </Grid>
         </Grid.Container>
         <Grid.Container gap={3} justify="center">
           <Grid xs={3}>
-            <Image src="https://pbs.twimg.com/profile_images/808330362417979392/AdiQ86lk_400x400.jpg" />
+            <Image src="/unicef.jpg" />
           </Grid>
           <Grid xs={3}>
-            <Image src="https://pbs.twimg.com/profile_images/1617899591436800000/Zymwna4V_400x400.jpg" />
+            <Image src="/talabat.jpg" />
           </Grid>
         </Grid.Container>
 
@@ -144,17 +157,21 @@ export default function HomePage() {
             <Grid xs={12}>
               <Gift size={64} color="blue"/>
               <Spacer x={0.5} />
-              <Description title={<Text h4>Prize</Text>} content={<Text p align="left">Amazing prizes will be brought by you by our partners</Text>} />
+              <Description title={<Text h4>Prize</Text>} content={<Text p align="left">QAR 40k worth of cash prizes and devices</Text>} />
             </Grid>
           </Grid.Container>
 
-        <Spacer h={4} />
-          <a href="https://app.micetribe.com/public/workspaces/qcri/events/4429qcri/forms/attendees">
-            <Button type="success">Register Now!</Button>
-          </a>
-        <Spacer h={4} />
+          <Spacer h={2} />
 
-            <Text h1 align="center" style={{ color: palette.successLight}}>Ideas</Text>
+        <Note label="Rules">As an essential part of our commitment to fostering an open, transparent, and collaborative environment, all participating teams in this hackathon are required to create a public repository on GitHub specifically for their project. This repository must be clearly labeled with the name of the hackathon, and should include comprehensive documentation of the project's progress, code, and any resources used. It serves as a digital footprint of your team's work and encourages knowledge sharing within the wider community. Additionally, consistent and active participation throughout the hackathon is mandatory for all team members. Attendance is not only crucial for team dynamics and project progression but also ensures a fair and competitive environment for all participants. Failure to comply with these guidelines may result in disqualification. Let's collaborate, innovate, and build something amazing, while upholding these standards of participation and transparency.</Note>
+
+          <Spacer h={2} />
+            <a href="https://app.micetribe.com/public/workspaces/qcri/events/4429qcri/forms/attendees">
+              <Button type="success">Register Now!</Button>
+            </a>
+          <Spacer h={4} />
+
+            <Text h1 align="center" style={{ color: palette.successLight}}>Challenges</Text>
             <Collapse.Group>
               <Collapse title="Education">
                 <Text p align="left">
@@ -193,6 +210,64 @@ export default function HomePage() {
 
         <Spacer h={8} />
 
+          <Text h1 style={{ color: palette.successLight }}>Schedule</Text>
+          <Spacer y={2} />
+          <Grid.Container gap={4} justify="center">
+            <Grid xs={8} style={{display: 'flex', flexDirection: 'column'}}>
+              <Text>Thursday, December 7, 2023</Text>
+              <Table data={[
+                { Time: '3:00 PM', Activity: 'Registration' },
+                { Time: '4:00 PM', Activity: 'Welcome' },
+                { Time: '4:30 PM', Activity: 'Technical Overview' },
+                { Time: '5:00 PM', Activity: 'Pitch your Ideas' },
+                { Time: '5:30 PM', Activity: 'Team Formation' },
+                { Time: '6:00 PM', Activity: 'Dinner' },
+              ]}>
+                <Table.Column prop="Time" label="Time" />
+                <Table.Column prop="Activity" label="Activity" />
+              </Table>
+            </Grid>
+
+            <Grid xs={8} style={{display: 'flex', flexDirection: 'column'}}>
+              <Text>Friday, December 8, 2023</Text>
+              <Table data={[
+                { Time: '8:00 AM', Activity: 'Registration' },
+                { Time: '8:30 AM', Activity: 'Breakfast' },
+                { Time: '9:00 AM', Activity: 'Hack' },
+                { Time: '12:00 PM', Activity: 'Lunch' },
+                { Time: '12:30 PM', Activity: 'Hack' },
+                { Time: '3:00 PM', Activity: 'Snack/Break' },
+                { Time: '6:00 PM', Activity: 'Dinner' },
+                { Time: '6:30 PM', Activity: 'Hack' },
+                { Time: '9:00 PM', Activity: 'Snack/Break' },
+                { Time: '9:30 PM', Activity: 'Hack' },
+              ]}>
+                <Table.Column prop="Time" label="Time" />
+                <Table.Column prop="Activity" label="Activity" />
+              </Table>
+            </Grid>
+
+            <Grid xs={8} style={{display: 'flex', flexDirection: 'column'}}>
+              <Text>Saturday, December 9, 2023</Text>
+              <Table data={[
+                { Time: '8:00 AM', Activity: 'Registration' },
+                { Time: '8:30 AM', Activity: 'Breakfast' },
+                { Time: '9:00 AM', Activity: 'Hack' },
+                { Time: '12:00 PM', Activity: 'Lunch' },
+                { Time: '12:30 PM', Activity: 'Hack' },
+                { Time: '3:00 PM', Activity: 'Snack/Submission' },
+                { Time: '4:00 PM', Activity: 'Demos' },
+                { Time: '5:00 PM', Activity: 'Dinner/Judges deliberate' },
+                { Time: '6:00 PM', Activity: 'Awards ceremony' },
+                { Time: '7:00 PM', Activity: 'End' },
+              ]}>
+                <Table.Column prop="Time" label="Time" />
+                <Table.Column prop="Activity" label="Activity" />
+              </Table>
+            </Grid>
+          </Grid.Container>
+
+        <Spacer h={8} />
 
           <Text h1 style={{ color: palette.successLight }}>Sponsor Us</Text>
           <Spacer y={2} />
