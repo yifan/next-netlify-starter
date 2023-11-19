@@ -69,7 +69,7 @@ export default function HomePage() {
               <Text h4 align="center" style={{ color: palette.successLight }}>Registrations</Text>
               </div>
               <div style={{ flex: 'none' }}>
-              <Text h1 align="center" style={{ color: palette.success }}>127</Text>
+              <Text h1 align="center" style={{ color: palette.success }}>137</Text>
               </div>
             </div>
           </Grid>
@@ -173,31 +173,27 @@ export default function HomePage() {
 
             <Text h1 align="center" style={{ color: palette.successLight}}>Challenges</Text>
             <Collapse.Group>
-              <Collapse title="Education">
+              <Collapse title="AI Voice & Customer Service Analytics Tool (Qatar Airways)">
                 <Text p align="left">
-                  Developing generative AI applications for education is essential because it can revolutionize personalized learning, tailoring educational content to individual student needs, strengths, and learning styles. Furthermore, it offers scalable solutions to address educational disparities by providing consistent, high-quality resources to diverse learners globally.
-                </Text>
-                <Text p align="left">
-                  Unlock the future of personalized learning with generative AI! Tailor education to every student's unique strengths and bridge global educational gaps with consistent, top-tier resources. Dive into the revolution today!
+                  Details to be announced soon.
                 </Text>
               </Collapse>
-              <Collapse title="Social Good">
+              <Collapse title="Socrates Assessment (QCRI)">
                 <Text p align="left">
-                  The complexities of modern society, from managing vast data sets in healthcare to addressing urban infrastructure needs, often surpass human analytical capacities. AI can step in as a transformative tool, enabling precise predictions in climate change modeling, optimizing resource allocation in social programs, and fostering global collaborations through real-time language translations.
-                </Text>
-                <Text p align="left">
-                  Empower change with generative AI for Social Good! Harness the power of technology to drive impactful solutions, uplift communities, and create a brighter, more equitable world. Join the movement and make a difference today!
+                  Details to be announced soon.
                 </Text>
               </Collapse>
-              <Collapse title="Healthcare">
+              <Collapse title="Enterprise AI Search (UNICEF)">
                 <Text p align="left">
-                  The healthcare sector grapples with the overwhelming task of processing vast amounts of patient data, often leading to diagnostic delays and treatment inefficiencies. AI can assist by enabling swift and accurate diagnostics, predicting patient-specific treatment outcomes, and optimizing hospital resource allocation, ensuring timely and personalized care for all.
-                </Text>
-                <Text p align="left">
-                  Transform healthcare with generative AI! Dive into a new era of swift diagnostics, personalized treatments, and optimized patient care.
+                  Giga's vast institutional knowledge is dispersed across multiple platforms, making timely information retrieval challenging. The absence of a centralized, intelligent system to access this knowledge impedes efficiency and leads to repetitive efforts. 
                 </Text>
               </Collapse>
-              <Collapse title="Innovation">
+              <Collapse title="Regulatory Analytical Tool for Connectivity (UNICEF)">
+                <Text p align="left">
+                  The telecommunication sector is governed by a myriad of regulations that vary nationally. Stakeholders, including initiatives like Giga which aims to connect all schools to the Internet, often find it challenging to navigate this complex regulatory landscape. This complexity can lead to potential non-compliance, hindered progress, and missed opportunities for innovation in connecting schools.
+                </Text>
+              </Collapse>
+              <Collapse title="Innovation (YOUR TEAM)">
                 <Text p align="left">
                   Generative AI's potential is truly limitless, transcending the boundaries of healthcare, social good, and education. As the technology evolves, we'll see it reshaping industries we haven't even considered yet, from entertainment and arts to urban planning and space exploration. Its adaptability and expansive capabilities position it as a tool that can revolutionize not just specific sectors, but the very fabric of our daily lives and future endeavors.
                 </Text>
