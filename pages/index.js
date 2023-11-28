@@ -31,8 +31,8 @@ export default function HomePage() {
               color: palette.violetDark,
               WebkitTextStroke: '1px #FFFFFF',
              }}>Generative AI Hackathon</Text>
-            <Text span b align="center" font="1.4em" style={{ color: palette.alert, webkitTextStroke: '1px #330000', }}>Dec 7-9, 2023</Text>
-            <Text span b align="center" font="1.1em" style={{ color: palette.alert, webkitTextStroke: '1px #330000', }}>Qatar Computing Research Institute, Doha</Text>
+            <Text span b align="center" font="1.4em" style={{ color: palette.alert, WebkitTextStroke: '1px #330000', }}>Dec 7-9, 2023</Text>
+            <Text span b align="center" font="1.1em" style={{ color: palette.alert, WebkitTextStroke: '1px #330000', }}>Qatar Computing Research Institute, Doha</Text>
           </Card.Content>
         </Card>
 
@@ -285,96 +285,11 @@ export default function HomePage() {
           </Grid.Container>
 
         <Spacer h={8} />
-
-          <Text h1 style={{ color: palette.successLight }}>Sponsor Us</Text>
-          <Spacer y={2} />
-            <Collapse.Group>
-              <Collapse title="Why Sponsor?">
-                <ul align="left">
-                  <li>
-                    <Text b>Foster Regional Talent:</Text> Position your company as a champion of local innovation and talent development.
-                  </li>
-                  <li>
-                    <Text b>Drive Innovation:</Text> Stay at the cutting-edge by supporting and catalyzing new technological breakthroughs.
-                  </li>
-                  <li>
-                    <Text b>Promote Products & Image:</Text> Utilize the hackathon as a platform to showcase your products and enhance brand visibility.
-                  </li>
-                  <li>
-                    <Text b>Build Connections:</Text> Establish valuable relationships with participants, potential future collaborators, and innovators.
-                  </li>
-                  <li>
-                    <Text b>Invest in the Future:</Text> Play an active role in shaping the technological landscape and community growth.
-                  </li>
-                </ul>
-              </Collapse>
-              <Collapse title="Technology Partner">
-                <ul align="left">
-                  <li>
-                    Provide access to your technology and expertise to help participants build innovative solutions.
-                  </li>
-                  <li>
-                    A large company logo displayed on both website and during event.
-                  </li>
-                  <li>
-                    Company branded merchanise and promotional materials distributed during the event.
-                  </li>
-                </ul>
-              </Collapse>
-              <Collapse title="Platinum Sponsor">
-                <ul align="left">
-                  <li>
-                    Contribute QAR 20,000 towards a prize named after your company.
-                  </li>
-                  <li>
-                    Can provide a business challenge to serve as one of the hackathon's themes.
-                  </li>
-                  <li>
-                    Can serve as one of the external judges for the hackathon.
-                  </li>
-                  <li>
-                    A large company logo displayed prominently on both website and during event.
-                  </li>
-                </ul>
-              </Collapse>
-              <Collapse title="Gold Sponsor">
-                <ul align="left">
-                  <li>
-                    Contribute QAR 10,000 towards the prize pool.
-                  </li>
-                  <li>
-                    A company logo will be displayed on both website and during event.
-                  </li>
-                </ul>
-              </Collapse>
-            </Collapse.Group>
-
-        <Spacer h={8} />
           <Text h2 style={{ color: palette.successLight }}>Qatar Computing Research Institute</Text>
           <Text p align="left">
             Qatar Computing Research Institute (QCRI) is a national research institute, established in 2010 by Qatar Foundation (QF) for Education, Science and Community Development, a private, non-profit organization that is supporting Qatar’s transformation from a carbon economy to a knowledge economy. QCRI operates under the umbrella of Hamad bin Khalifa University (HBKU).
           </Text>
 
-        {/* <Spacer h={8} />
-          <Text h2 style={{ color: palette.successLight }}>Organizers</Text>
-          <Grid.Container gap={2} justify="center" style={{alignItems: "center"}}>
-            <Grid style={{display: "flex", flexDirection: "column"}}>
-              <Card width='100%' shadow align="center">
-                <Image my={0} src="/yifan.png" style={{maxHeight: '8em', maxWidth: '8em'}} />
-                <Text p my={0} small>Yifan Zhang</Text>
-                <Text p my={0} small>yzhang@hbku.edu.qa</Text>
-              </Card>
-            </Grid>
-            <Grid style={{display: "flex", flexDirection: "column"}}>
-              <Image src="/qcri.png" style={{maxWidth:"80px", maxHeight:"80px"}}/>
-              <Text h4 align="center">QCRI</Text>
-            </Grid>
-            <Grid style={{display: "flex", flexDirection: "column"}}>
-              <Image src="/qcri.png" style={{maxWidth:"80px", maxHeight:"80px"}}/>
-              <Text h4 align="center">QCRI</Text>
-            </Grid>
-          </Grid.Container> */}
-          
         <Spacer h={8} />
         <Page.Footer>
           <Text type="secondary" align="center" small>
