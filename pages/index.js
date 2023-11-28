@@ -29,7 +29,7 @@ export default function HomePage() {
           <Card.Content style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', }}>
             <Text p className="logo" b align="center" style={{ 
               color: palette.violetDark,
-              webkitTextStroke: '1px #FFFFFF',
+              WebkitTextStroke: '1px #FFFFFF',
              }}>Generative AI Hackathon</Text>
             <Text span b align="center" font="1.4em" style={{ color: palette.alert, webkitTextStroke: '1px #330000', }}>Dec 7-9, 2023</Text>
             <Text span b align="center" font="1.1em" style={{ color: palette.alert, webkitTextStroke: '1px #330000', }}>Qatar Computing Research Institute, Doha</Text>
@@ -120,28 +120,32 @@ export default function HomePage() {
 
         <Text h1 align="center" style={{ color: palette.successLight}}>Sponsors</Text>
         <Grid.Container gap={2} justify="center" style={{alignItems: "center"}}>
-          <Grid xs={6} md={8}>
-            <Image src="/shell.jpg" style={{minWidth:"80px", minHeight:"80px"}}/>
-          </Grid>
-          <Grid xs={6} md={8}>
-            <Image src="/google.jpg" style={{minWidth:"80px", minHeight:"80px"}}/>
-          </Grid>
-          <Grid xs={6} md={8}>
-            <Image src="/microsoft.jpg" style={{minWidth:"80px", minHeight:"80px"}}/>
+          <Grid xs={8}>
+            <Image src="/shell.svg" style={{minWidth:"80px", maxWidth:"100%", minHeight:"80px", height:"auto"}}/>
           </Grid>
         </Grid.Container>
         <Grid.Container gap={2} justify="center" style={{alignItems: "center"}}>
-          <Grid xs={2} md={4}>
+          <Grid xs={10}>
+            <Image src="/google.svg" style={{minWidth:"80px", maxWidth:"100%", minHeight:"80px", height:"auto"}}/>
           </Grid>
-          <Grid xs={2} md={4}>
-            <Image src="/unicef.jpg" style={{maxWidth:"80px", maxHeight:"80px"}}/>
+          <Grid xs={10}>
+            <Image src="/microsoft.svg" style={{minWidth:"80px", maxWidth:"100%", minHeight:"80px", height:"auto"}}/>
           </Grid>
-          <Grid xs={2} md={4}>
+        </Grid.Container>
+        <Grid.Container gap={2} justify="center" style={{alignItems: "center"}}>
+          <Grid xs={7}>
+            <Image src="/logrhythm.jpg" style={{minWidth:"60px", maxWidth:"100%", minHeight:"60px", height:"auto"}}/>
           </Grid>
-          <Grid xs={2} md={4}>
-            <Image src="/talabat.jpg" style={{maxWidth:"80px", maxHeight:"80px"}}/>
+          <Grid xs={7}>
+            <Image src="/mannai.png" style={{minWidth:"60px", maxWidth:"100%", minHeight:"60px", height:"auto"}}/>
           </Grid>
-          <Grid xs={2} md={4}>
+        </Grid.Container>
+        <Grid.Container gap={2} justify="center" style={{alignItems: "center"}}>
+          <Grid xs={3}>
+            <Image src="/talabat.jpg" style={{maxWidth:"100%", maxHeight:"80px", height:"auto"}}/>
+          </Grid>
+          <Grid xs={3}>
+            <Image src="/unicef.jpg" style={{maxWidth:"100%", maxHeight:"80px", height: "auto"}}/>
           </Grid>
         </Grid.Container>
 
