@@ -69,7 +69,7 @@ export default function HomePage() {
               <Text h4 align="center" style={{ color: palette.successLight }}>Registrations</Text>
               </div>
               <div style={{ flex: 'none' }}>
-              <Text h1 align="center" style={{ color: palette.success }}>137</Text>
+              <Text h1 align="center" style={{ color: palette.success }}>227</Text>
               </div>
             </div>
           </Grid>
@@ -119,17 +119,29 @@ export default function HomePage() {
         <Spacer h={8} />
 
         <Text h1 align="center" style={{ color: palette.successLight}}>Sponsors</Text>
-        <Grid.Container gap={4} justify="center">
-          <Grid xs={12}>
-            <Image src="/shell.jpg" />
+        <Grid.Container gap={2} justify="center" style={{alignItems: "center"}}>
+          <Grid xs={6} md={8}>
+            <Image src="/shell.jpg" style={{minWidth:"80px", minHeight:"80px"}}/>
+          </Grid>
+          <Grid xs={6} md={8}>
+            <Image src="/google.jpg" style={{minWidth:"80px", minHeight:"80px"}}/>
+          </Grid>
+          <Grid xs={6} md={8}>
+            <Image src="/microsoft.jpg" style={{minWidth:"80px", minHeight:"80px"}}/>
           </Grid>
         </Grid.Container>
-        <Grid.Container gap={3} justify="center">
-          <Grid xs={3}>
-            <Image src="/unicef.jpg" />
+        <Grid.Container gap={2} justify="center" style={{alignItems: "center"}}>
+          <Grid xs={2} md={4}>
           </Grid>
-          <Grid xs={3}>
-            <Image src="/talabat.jpg" />
+          <Grid xs={2} md={4}>
+            <Image src="/unicef.jpg" style={{maxWidth:"80px", maxHeight:"80px"}}/>
+          </Grid>
+          <Grid xs={2} md={4}>
+          </Grid>
+          <Grid xs={2} md={4}>
+            <Image src="/talabat.jpg" style={{maxWidth:"80px", maxHeight:"80px"}}/>
+          </Grid>
+          <Grid xs={2} md={4}>
           </Grid>
         </Grid.Container>
 
@@ -175,12 +187,12 @@ export default function HomePage() {
             <Collapse.Group>
               <Collapse title="AI Voice & Customer Service Analytics Tool (Qatar Airways)">
                 <Text p align="left">
-                  Details to be announced soon.
+                  <strong>Qatar Airways</strong> manages a large volume of customer service calls daily. The absence of a centralized system to analyze these calls hinders the efficient identification of customer concerns and data-driven improvements.
                 </Text>
               </Collapse>
               <Collapse title="Socrates Assessment (QCRI)">
                 <Text p align="left">
-                  Details to be announced soon.
+                  Details coming soon...
                 </Text>
               </Collapse>
               <Collapse title="Enterprise AI Search (UNICEF)">
@@ -191,6 +203,11 @@ export default function HomePage() {
               <Collapse title="Regulatory Analytical Tool for Connectivity (UNICEF)">
                 <Text p align="left">
                   The telecommunication sector is governed by a myriad of regulations that vary nationally. Stakeholders, including initiatives like Giga which aims to connect all schools to the Internet, often find it challenging to navigate this complex regulatory landscape. This complexity can lead to potential non-compliance, hindered progress, and missed opportunities for innovation in connecting schools.
+                </Text>
+              </Collapse>
+              <Collapse title="App Reviews Mining (TALABAT)">
+                <Text p align="left">
+                  <strong>talabat</strong> relies on user feedback to enhance its services continuously. However, the scattered nature of app reviews across various platforms poses a challenge in harnessing meaningful insights promptly. The absence of a centralized system for mining and analyzing app reviews hampers the efficient identification of user concerns and data-driven improvements. 
                 </Text>
               </Collapse>
               <Collapse title="Innovation (YOUR TEAM)">
@@ -333,6 +350,26 @@ export default function HomePage() {
           <Text p align="left">
             Qatar Computing Research Institute (QCRI) is a national research institute, established in 2010 by Qatar Foundation (QF) for Education, Science and Community Development, a private, non-profit organization that is supporting Qatar’s transformation from a carbon economy to a knowledge economy. QCRI operates under the umbrella of Hamad bin Khalifa University (HBKU).
           </Text>
+
+        {/* <Spacer h={8} />
+          <Text h2 style={{ color: palette.successLight }}>Organizers</Text>
+          <Grid.Container gap={2} justify="center" style={{alignItems: "center"}}>
+            <Grid style={{display: "flex", flexDirection: "column"}}>
+              <Card width='100%' shadow align="center">
+                <Image my={0} src="/yifan.png" style={{maxHeight: '8em', maxWidth: '8em'}} />
+                <Text p my={0} small>Yifan Zhang</Text>
+                <Text p my={0} small>yzhang@hbku.edu.qa</Text>
+              </Card>
+            </Grid>
+            <Grid style={{display: "flex", flexDirection: "column"}}>
+              <Image src="/qcri.png" style={{maxWidth:"80px", maxHeight:"80px"}}/>
+              <Text h4 align="center">QCRI</Text>
+            </Grid>
+            <Grid style={{display: "flex", flexDirection: "column"}}>
+              <Image src="/qcri.png" style={{maxWidth:"80px", maxHeight:"80px"}}/>
+              <Text h4 align="center">QCRI</Text>
+            </Grid>
+          </Grid.Container> */}
           
         <Spacer h={8} />
         <Page.Footer>
