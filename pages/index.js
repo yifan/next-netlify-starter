@@ -286,9 +286,11 @@ export default function HomePage() {
 
         <Spacer h={8} />
           <Text h2 style={{ color: palette.successLight }}>Qatar Computing Research Institute</Text>
-          <Text p align="left">
+          <Text p align="center">
             Qatar Computing Research Institute (QCRI) is a national research institute, established in 2010 by Qatar Foundation (QF) for Education, Science and Community Development, a private, non-profit organization that is supporting Qatar’s transformation from a carbon economy to a knowledge economy. QCRI operates under the umbrella of Hamad bin Khalifa University (HBKU).
           </Text>
+          <Spacer h={2} />
+          <Image src='/qcri.png' width="100%" height="auto" style={{maxWidth:"400px"}} />
 
         <Spacer h={8} />
         <Page.Footer>
