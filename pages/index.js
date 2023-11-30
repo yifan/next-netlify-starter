@@ -54,10 +54,10 @@ export default function HomePage() {
 
         <Spacer h={4} />
           <a href="https://app.micetribe.com/public/workspaces/qcri/events/4429qcri/forms/attendees">
-            <Button type="success">Register Now!</Button>
+            <Button type="success" disabled>Registration Closed!</Button>
           </a>
         <Spacer h={1} />
-          <a href="https://join.slack.com/t/hbku-global/shared_invite/zt-23u6q4r4z-iohL9TZlqNuHuMl_gC4LoQ">
+          <a href="https://join.slack.com/t/qcrigenaihack2023/shared_invite/zt-28dgxcyv4-w3cMtf1q3VegBdeiTALbFg">
             <Button type="voilet">Join Slack</Button>
           </a>
         <Spacer h={4} />
@@ -69,7 +69,7 @@ export default function HomePage() {
               <Text h4 align="center" style={{ color: palette.successLight }}>Registrations</Text>
               </div>
               <div style={{ flex: 'none' }}>
-              <Text h1 align="center" style={{ color: palette.success }}>227</Text>
+              <Text h1 align="center" style={{ color: palette.success }}>277</Text>
               </div>
             </div>
           </Grid>
