@@ -134,8 +134,7 @@ export default function HomePage() {
         </Grid.Container>
         <Grid.Container gap={2} justify="center" style={{alignItems: "center"}}>
           <Grid xs={7}>
-            <Image src="/logrhythm.png" style={{minWidth:"60px", maxWidth:"100%", minHeight:"60px", height:"auto", background:"#335588"
-          }}/>
+            <Image src="/logrhythm.png" style={{minWidth:"60px", maxWidth:"100%", minHeight:"60px", height:"auto"}}/>
           </Grid>
           <Grid xs={7}>
             <Image src="/mannai.png" style={{minWidth:"60px", maxWidth:"100%", minHeight:"60px", height:"auto"}}/>
