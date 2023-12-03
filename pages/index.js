@@ -134,7 +134,8 @@ export default function HomePage() {
         </Grid.Container>
         <Grid.Container gap={2} justify="center" style={{alignItems: "center"}}>
           <Grid xs={7}>
-            <Image src="/logrhythm.jpg" style={{minWidth:"60px", maxWidth:"100%", minHeight:"60px", height:"auto"}}/>
+            <Image src="/logrhythm.png" style={{minWidth:"60px", maxWidth:"100%", minHeight:"60px", height:"auto", background:"#335588"
+          }}/>
           </Grid>
           <Grid xs={7}>
             <Image src="/mannai.png" style={{minWidth:"60px", maxWidth:"100%", minHeight:"60px", height:"auto"}}/>
@@ -189,11 +190,6 @@ export default function HomePage() {
 
             <Text h1 align="center" style={{ color: palette.successLight}}>Challenges</Text>
             <Collapse.Group>
-              <Collapse title="AI Voice & Customer Service Analytics Tool (Qatar Airways)">
-                <Text p align="left">
-                  <strong>Qatar Airways</strong> manages a large volume of customer service calls daily. The absence of a centralized system to analyze these calls hinders the efficient identification of customer concerns and data-driven improvements.
-                </Text>
-              </Collapse>
               <Collapse title="Socrates Assessment (QCRI)">
                 <Text p align="left">
                   Details coming soon...
