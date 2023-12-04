@@ -181,11 +181,6 @@ export default function HomePage() {
 
         <Note label="Rules">As an essential part of our commitment to fostering an open, transparent, and collaborative environment, all participating teams in this hackathon are required to create a public repository on GitHub specifically for their project. This repository must be clearly labeled with the name of the hackathon, and should include comprehensive documentation of the project's progress, code, and any resources used. It serves as a digital footprint of your team's work and encourages knowledge sharing within the wider community. Additionally, consistent and active participation throughout the hackathon is mandatory for all team members. Attendance is not only crucial for team dynamics and project progression but also ensures a fair and competitive environment for all participants. Failure to comply with these guidelines may result in disqualification. Let's collaborate, innovate, and build something amazing, while upholding these standards of participation and transparency.</Note>
 
-          <Spacer h={2} />
-            <a href="https://app.micetribe.com/public/workspaces/qcri/events/4429qcri/forms/attendees">
-              <Button type="success">Register Now!</Button>
-            </a>
-          <Spacer h={4} />
 
             <Text h1 align="center" style={{ color: palette.successLight}}>Challenges</Text>
             <Collapse.Group>
