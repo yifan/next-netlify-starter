@@ -225,10 +225,11 @@ export default function HomePage() {
               <Table data={[
                 { Time: '3:00 PM', Activity: 'Registration' },
                 { Time: '4:00 PM', Activity: 'Welcome' },
-                { Time: '4:30 PM', Activity: 'Technical Overview' },
-                { Time: '5:00 PM', Activity: 'Pitch your Ideas' },
-                { Time: '5:30 PM', Activity: 'Team Formation' },
-                { Time: '6:00 PM', Activity: 'Dinner' },
+                { Time: '4:15 PM', Activity: 'Meet Sponsors' },
+                { Time: '4:50 PM', Activity: 'Break/Prayer' },
+                { Time: '5:05 PM', Activity: 'Challenges' },
+                { Time: '5:25 PM', Activity: 'Team Formation' },
+                { Time: '6:30 PM', Activity: 'Dinner' },
               ]}>
                 <Table.Column prop="Time" label="Time" />
                 <Table.Column prop="Activity" label="Activity" />
@@ -263,10 +264,11 @@ export default function HomePage() {
                 { Time: '12:00 PM', Activity: 'Lunch' },
                 { Time: '12:30 PM', Activity: 'Hack' },
                 { Time: '3:00 PM', Activity: 'Snack/Submission' },
-                { Time: '4:00 PM', Activity: 'Demos' },
-                { Time: '5:00 PM', Activity: 'Dinner/Judges deliberate' },
+                { Time: '4:00 PM', Activity: 'Presentations' },
+                { Time: '5:00 PM', Activity: 'Break/Prayer' },
+                { Time: '5:15 PM', Activity: 'Judges Deliverate' },
                 { Time: '6:00 PM', Activity: 'Awards ceremony' },
-                { Time: '7:00 PM', Activity: 'End' },
+                { Time: '6:30 PM', Activity: 'Dinner' },
               ]}>
                 <Table.Column prop="Time" label="Time" />
                 <Table.Column prop="Activity" label="Activity" />
