@@ -116,7 +116,7 @@ export default function HomePage() {
           </Grid>
         </Grid.Container>
 
-        <Spacer h={8} />
+        <Spacer h={4} />
 
         <Text h1 align="center" style={{ color: palette.successLight }}>Sponsors</Text>
         <Grid.Container gap={2} justify="center" style={{ alignItems: "center" }}>
@@ -153,7 +153,7 @@ export default function HomePage() {
         </Grid.Container>
 
 
-        <Spacer h={8} />
+        <Spacer h={4} />
 
         <Text h1 align="center" style={{ color: palette.successLight }}>Event Details</Text>
         <Spacer y={2} />
@@ -180,7 +180,8 @@ export default function HomePage() {
           </Grid>
         </Grid.Container>
 
-        <Spacer h={2} />
+        <Spacer h={4} />
+
         <Text h1 align="center" style={{ color: palette.successLight }}>Prizes</Text>
         <div style={{ display: 'flex', justifyContent: "center" }}>
           <div>
@@ -204,7 +205,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <Spacer h={2} />
+        <Spacer h={4} />
         <Text h1 align="center" style={{ color: palette.successLight }}>Judging Criteria</Text>
         <Collapse.Group>
           <Collapse title="User Experience / User Interface">
@@ -248,9 +249,9 @@ export default function HomePage() {
         </Collapse.Group>
         <Spacer h={2} />
 
-        <Spacer h={2} />
         <Note label="Rules">As an essential part of our commitment to fostering an open, transparent, and collaborative environment, all participating teams in this hackathon are required to create a public repository on GitHub specifically for their project. This repository must be clearly labeled with the name of the hackathon, and should include comprehensive documentation of the project's progress, code, and any resources used. It serves as a digital footprint of your team's work and encourages knowledge sharing within the wider community. Additionally, consistent and active participation throughout the hackathon is mandatory for all team members. Attendance is not only crucial for team dynamics and project progression but also ensures a fair and competitive environment for all participants. Failure to comply with these guidelines may result in disqualification. Let's collaborate, innovate, and build something amazing, while upholding these standards of participation and transparency.</Note>
 
+        <Spacer h={4} />
 
         <Text h1 align="center" style={{ color: palette.successLight }}>Challenges</Text>
         <Collapse.Group>
@@ -286,7 +287,7 @@ export default function HomePage() {
         <Text s>Details of our challenges and dataset can be found on our github repo: <a href="https://github.com/qcri/genaihack23">https://github.com/qcri/genaihack23</a></Text>
 
 
-        <Spacer h={8} />
+        <Spacer h={4} />
 
         <Text h1 style={{ color: palette.successLight }}>Schedule</Text>
         <Spacer y={2} />
