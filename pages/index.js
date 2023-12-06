@@ -181,26 +181,26 @@ export default function HomePage() {
         </Grid.Container>
 
         <Spacer h={2} />
-        <Text h1 align="center" style={{ color: palette.successLight }}>Prize Details</Text>
+        <Text h1 align="center" style={{ color: palette.successLight }}>Prizes</Text>
         <div style={{display: 'flex', justifyContent: "center" }}>
           <div>
             <h5>Overall Winner (by Shell)</h5>
             <Text>QAR20k</Text>
 
             <h5>Runner Up (by Mannai/LogRynthm)</h5>
-            <Text>QAR10k</Text>
+            <Text>QAR10k Vouchers</Text>
 
             <h5>Wow Factor Award</h5>
-            <Text>Samsung Phones</Text>
+            <Text>Samsung Smart Phones</Text>
 
             <h5>Best User Experience Award</h5>
-            <Text>Samsung Phones</Text>
+            <Text>Samsung Smart Phones</Text>
 
             <h5>Most Innovative Award</h5>
-            <Text>Samsung Phones</Text>
+            <Text>Samsung Smart Phones</Text>
 
             <h5>Hacker's Choice Award</h5>
-            <Text>Airpods</Text>
+            <Text>Apple Airpods</Text>
           </div> 
         </div>
 
@@ -313,9 +313,10 @@ export default function HomePage() {
               { Time: '8:30 AM', Activity: 'Breakfast' },
               { Time: '9:00 AM', Activity: 'Hack' },
               { Time: '11:50 PM', Activity: 'Prayer' },
-              { Time: '12:10 PM', Activity: 'Lunch' },
+              { Time: '12:15 PM', Activity: 'Lunch' },
               { Time: '1:00 PM', Activity: 'Hack' },
               { Time: '3:00 PM', Activity: 'Snack/Break' },
+              { Time: '4:50 PM', Activity: 'Prayer' },
               { Time: '6:00 PM', Activity: 'Dinner' },
               { Time: '6:30 PM', Activity: 'Hack' },
               { Time: '9:00 PM', Activity: 'Snack/Break' },
@@ -332,11 +333,12 @@ export default function HomePage() {
               { Time: '8:00 AM', Activity: 'Registration' },
               { Time: '8:30 AM', Activity: 'Breakfast' },
               { Time: '9:00 AM', Activity: 'Hack' },
-              { Time: '12:00 PM', Activity: 'Lunch' },
-              { Time: '12:30 PM', Activity: 'Hack' },
+              { Time: '11:50 PM', Activity: 'Prayer' },
+              { Time: '12:15 PM', Activity: 'Lunch' },
+              { Time: '1:00 PM', Activity: 'Hack' },
               { Time: '3:00 PM', Activity: 'Snack/Submission' },
               { Time: '4:00 PM', Activity: 'Presentations' },
-              { Time: '5:00 PM', Activity: 'Break/Prayer' },
+              { Time: '4:50 PM', Activity: 'Prayer' },
               { Time: '5:15 PM', Activity: 'Judges Deliverate' },
               { Time: '6:00 PM', Activity: 'Awards ceremony' },
               { Time: '6:30 PM', Activity: 'Dinner' },
