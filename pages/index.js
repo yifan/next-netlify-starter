@@ -182,7 +182,9 @@ export default function HomePage() {
 
         <Spacer h={4} />
 
-        <Text h1 align="center" style={{ color: palette.successLight }}>Prizes</Text>
+        <a href="#prizes">
+          <Text h1 id="prizes" align="center" style={{ color: palette.successLight }}>Prizes</Text>
+        </a>
         <div style={{ display: 'flex', justifyContent: "center" }}>
           <div>
             <h5>Overall Winner (by Shell)</h5>
@@ -206,7 +208,9 @@ export default function HomePage() {
         </div>
 
         <Spacer h={4} />
-        <Text h1 align="center" style={{ color: palette.successLight }}>Judging Criteria</Text>
+        <a href="#judging-criteria">
+          <Text h1 id="judging-criteria" align="center" style={{ color: palette.successLight }}>Judging Criteria</Text>
+        </a>
         <Collapse.Group>
           <Collapse title="User Experience / User Interface">
             <Text p align="left">
@@ -253,7 +257,9 @@ export default function HomePage() {
 
         <Spacer h={4} />
 
-        <Text h1 align="center" style={{ color: palette.successLight }}>Challenges</Text>
+        <a href="#challenges">
+          <Text h1 align="center" style={{ color: palette.successLight }}>Challenges</Text>
+        </a>
         <Collapse.Group>
           <Collapse title="Socrates Assessment (QCRI)">
             <Text p align="left">
@@ -289,7 +295,9 @@ export default function HomePage() {
 
         <Spacer h={4} />
 
-        <Text h1 style={{ color: palette.successLight }}>Schedule</Text>
+        <a href="#schedule">
+          <Text h1 id="schedule" style={{ color: palette.successLight }}>Schedule</Text>
+        </a>
         <Spacer y={2} />
         <Grid.Container gap={4} justify="center">
           <Grid xs={8} style={{ display: 'flex', flexDirection: 'column' }}>
