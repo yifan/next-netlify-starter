@@ -182,7 +182,7 @@ export default function HomePage() {
 
         <Spacer h={2} />
         <Text h1 align="center" style={{ color: palette.successLight }}>Prizes</Text>
-        <div style={{display: 'flex', justifyContent: "center" }}>
+        <div style={{ display: 'flex', justifyContent: "center" }}>
           <div>
             <h5>Overall Winner (by Shell)</h5>
             <Text>QAR20k</Text>
@@ -201,7 +201,7 @@ export default function HomePage() {
 
             <h5>Hacker's Choice Award</h5>
             <Text>Apple Airpods</Text>
-          </div> 
+          </div>
         </div>
 
         <Spacer h={2} />
@@ -283,6 +283,7 @@ export default function HomePage() {
             </Text>
           </Collapse>
         </Collapse.Group>
+        <Text s>Details of our challenges and dataset can be found on our github repo: <a href="https://github.com/qcri/genaihack23">https://github.com/qcri/genaihack23</a></Text>
 
 
         <Spacer h={8} />
@@ -355,7 +356,9 @@ export default function HomePage() {
           Qatar Computing Research Institute (QCRI) is a national research institute, established in 2010 by Qatar Foundation (QF) for Education, Science and Community Development, a private, non-profit organization that is supporting Qatar’s transformation from a carbon economy to a knowledge economy. QCRI operates under the umbrella of Hamad bin Khalifa University (HBKU).
         </Text>
         <Spacer h={2} />
-        <Image src='/qcri.png' width="100%" height="auto" style={{ maxWidth: "400px" }} />
+        <a href="https://www.qcri.org.qa/">
+          <Image src='/qcri.png' width="100%" height="auto" style={{ maxWidth: "400px" }} />
+        </a>
 
         <Spacer h={8} />
         <Page.Footer>
