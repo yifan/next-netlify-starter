@@ -258,7 +258,7 @@ export default function HomePage() {
         <Spacer h={4} />
 
         <a href="#challenges">
-          <Text h1 align="center" style={{ color: palette.successLight }}>Challenges</Text>
+          <Text h1 id="challenges" align="center" style={{ color: palette.successLight }}>Challenges</Text>
         </a>
         <Collapse.Group>
           <Collapse title="Socrates Assessment (QCRI)">
@@ -358,6 +358,14 @@ export default function HomePage() {
             </Table>
           </Grid>
         </Grid.Container>
+
+        <Spacer h={4} />
+        <a href="#how-to-reach">
+          <Text h2 id="how-to-reach" style={{ color: palette.successLight }}>How to Reach QCRI</Text>
+        </a>
+        <Text>
+          You can reach Qatar Computing Research Institute by car, and by metro. The closest Metro station is Education City Metro Station. You can use this <a href="https://maps.app.goo.gl/R56ws9vEWwW8WPjWA">link</a> for Google Maps.
+        </Text>
 
         <Spacer h={8} />
         <Text h2 style={{ color: palette.successLight }}>Qatar Computing Research Institute</Text>
