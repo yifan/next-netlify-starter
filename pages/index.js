@@ -190,7 +190,7 @@ export default function HomePage() {
             <h5>Overall Winner (by Shell)</h5>
             <Text>QAR20k</Text>
 
-            <h5>Runner Up (by Mannai/LogRynthm)</h5>
+            <h5>Runner Up (by Mannai/LogRhythm)</h5>
             <Text>QAR10k Vouchers</Text>
 
             <h5>Wow Factor Award</h5>
