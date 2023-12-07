@@ -300,7 +300,7 @@ export default function HomePage() {
         </a>
         <Spacer y={2} />
         <Grid.Container gap={4} justify="center">
-          <Grid xs={8} style={{ display: 'flex', flexDirection: 'column' }}>
+          <Grid xs={24} sm={20} md={8} style={{ display: 'flex', flexDirection: 'column' }}>
             <Text>Thursday, December 7, 2023</Text>
             <Table data={[
               { Time: '3:00 PM', Activity: 'Registration' },
@@ -316,7 +316,7 @@ export default function HomePage() {
             </Table>
           </Grid>
 
-          <Grid xs={8} style={{ display: 'flex', flexDirection: 'column' }}>
+          <Grid xs={24} sm={20} md={8} style={{ display: 'flex', flexDirection: 'column' }}>
             <Text>Friday, December 8, 2023</Text>
             <Table data={[
               { Time: '8:00 AM', Activity: 'Registration' },
@@ -337,7 +337,7 @@ export default function HomePage() {
             </Table>
           </Grid>
 
-          <Grid xs={8} style={{ display: 'flex', flexDirection: 'column' }}>
+          <Grid xs={24} sm={20} md={8} style={{ display: 'flex', flexDirection: 'column' }}>
             <Text>Saturday, December 9, 2023</Text>
             <Table data={[
               { Time: '8:00 AM', Activity: 'Registration' },
