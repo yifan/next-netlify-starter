@@ -343,7 +343,7 @@ export default function HomePage() {
               { Time: '8:00 AM', Activity: 'Registration' },
               { Time: '8:30 AM', Activity: 'Breakfast' },
               { Time: '9:00 AM', Activity: 'Hack' },
-              { Time: '11:00 - 12:30 PM', Activity: 'Prayer' },
+              { Time: '11:50 - 12:10 PM', Activity: 'Prayer' },
               { Time: '12:30 PM', Activity: 'Lunch' },
               { Time: '1:00 PM', Activity: 'Hack' },
               { Time: '3:00 PM', Activity: 'Snack/Submission' },
