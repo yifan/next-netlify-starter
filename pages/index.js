@@ -120,16 +120,17 @@ export default function HomePage() {
 
         <Text h1 align="center" style={{ color: palette.successLight }}>Sponsors</Text>
         <Grid.Container gap={2} justify="center" style={{ alignItems: "center" }}>
-          <Grid xs={8}>
-            <Image src="/shell.svg" style={{ minWidth: "80px", maxWidth: "100%", minHeight: "80px", height: "auto" }} />
-          </Grid>
-        </Grid.Container>
-        <Grid.Container gap={2} justify="center" style={{ alignItems: "center" }}>
           <Grid xs={10}>
-            <Image src="/google.svg" style={{ minWidth: "80px", maxWidth: "100%", minHeight: "80px", height: "auto" }} />
+            <Image src="/shell.svg" style={{ width: "300px", height: "300px"}} />
           </Grid>
           <Grid xs={10}>
-            <Image src="/microsoft.svg" style={{ minWidth: "80px", maxWidth: "100%", minHeight: "80px", height: "auto" }} />
+            <Image src="/google.svg" style={{ width: "300px", height: "300px"}} />
+          </Grid>
+          <Grid xs={10}>
+            <Image src="/microsoft.svg" style={{ width: "300px", height: "300px"}} />
+          </Grid>
+          <Grid xs={10}>
+            <Image src="/talabat.jpg" style={{ width: "300px", height: "300px"}} />
           </Grid>
         </Grid.Container>
         <Grid.Container gap={2} justify="center" style={{ alignItems: "center" }}>
@@ -141,9 +142,6 @@ export default function HomePage() {
           </Grid>
         </Grid.Container>
         <Grid.Container gap={2} justify="center" style={{ alignItems: "center" }}>
-          <Grid xs={3}>
-            <Image src="/talabat.jpg" style={{ maxWidth: "100%", maxHeight: "80px", height: "auto" }} />
-          </Grid>
           <Grid xs={3}>
             <Image src="/unicef.jpg" style={{ maxWidth: "100%", maxHeight: "80px", height: "auto" }} />
           </Grid>
@@ -349,7 +347,7 @@ export default function HomePage() {
               { Time: '3:00 PM', Activity: 'Snack/Submission' },
               { Time: '4:00 PM', Activity: 'Presentations' },
               { Time: '4:50 PM', Activity: 'Prayer' },
-              { Time: '5:15 PM', Activity: 'Judges Deliverate' },
+              { Time: '5:15 PM', Activity: 'Presentations' },
               { Time: '6:00 PM', Activity: 'Awards ceremony' },
               { Time: '6:30 PM', Activity: 'Dinner' },
             ]}>
