@@ -86,7 +86,7 @@ export default function HomePage() {
         </Grid.Container>
 
         <Spacer h={4} />
-
+{/* 
         <Text h1 style={{ color: palette.successLight }}>Pre-Hackathon</Text>
         <Grid.Container gap={2}>
           <Grid xs={24} md={12}>
@@ -116,7 +116,11 @@ export default function HomePage() {
           </Grid>
         </Grid.Container>
 
-        <Spacer h={4} />
+        <Spacer h={4} /> */}
+        <Text h1 align="center" style={{ color: palette.successLight }}>Thank you to our sponsors and participants!</Text>
+        <Image src="/photo1.jpg" style={{ width: "100%", height: "auto"}} />
+        <Image src="/photo2.jpeg" style={{ width: "100%", height: "auto"}} />
+
 
         <Text h1 align="center" style={{ color: palette.successLight }}>Sponsors</Text>
         <Grid.Container gap={2} justify="center" style={{ alignItems: "center" }}>
@@ -151,7 +155,7 @@ export default function HomePage() {
         </Grid.Container>
 
 
-        <Spacer h={4} />
+        {/* <Spacer h={4} />
 
         <Text h1 align="center" style={{ color: palette.successLight }}>Event Details</Text>
         <Spacer y={2} />
@@ -176,37 +180,71 @@ export default function HomePage() {
             <Spacer x={0.5} />
             <Description title={<Text h4>Prize</Text>} content={<Text p align="left">QAR 40k worth of cash prizes and devices</Text>} />
           </Grid>
-        </Grid.Container>
+        </Grid.Container> */}
 
         <Spacer h={4} />
 
         <a href="#prizes">
-          <Text h1 id="prizes" align="center" style={{ color: palette.successLight }}>Prizes</Text>
+          {/* <Text h1 id="prizes" align="center" style={{ color: palette.successLight }}>Prizes</Text> */}
+          <Text h1 id="prizes" align="center" style={{ color: palette.successLight }}>Winners</Text>
         </a>
         <div style={{ display: 'flex', justifyContent: "center" }}>
           <div>
-            <h5>Overall Winner (by Shell)</h5>
-            <Text>QAR20k</Text>
+            <Collapse title={<Text h5>Overall Winner (Sponsored by Shell): 👑 <i>Team Capricorn</i></Text>}>
+              <Text p align="left">
+                A GenAI powered Recruitment Platform using cutting-edge asynchronous interview technology to streamline the hiring process. It serves to aid hiring managers and headhunting firms in evaluating asynchronous interviews of candidates.
+              </Text>
+              <h6 align="left">Euisuh Jeong, Mohammad Shahmeer Ahmad, Keivin Isufaj, Johanne Medina (QCRI)</h6>
+              <Text align="left">Prize: QAR20k</Text>
+            </Collapse>
 
-            <h5>Runner Up (by Mannai/LogRhythm)</h5>
-            <Text>QAR10k Vouchers</Text>
+            <Collapse title={<Text h5>Runner Up (by Mannai/LogRhythm): 👑 <i>Team Sakina.AI</i></Text>}>
+              <Text p align="left">
+                Mental Health Triaging Solution
+              </Text>
+              <h6 align="left">Leena Babiker, Syed Hashim</h6>
+              <Text align="left">Prize: QAR10k Vouchers</Text>
+            </Collapse>
 
-            <h5>Wow Factor Award</h5>
-            <Text>Samsung Smart Phones</Text>
+            <Collapse title={<Text h5>Best User Experience Award: <i>Velocity AI</i></Text>}>
+              <Text p align="left">
+                1- Talabat Reviews System, including a chatbot with 2- Socrates Chat and Framework. 3- Reviews System
+              </Text>
+              <h6 align="left">Mohamad Bahri, Mahmoud El Orfali</h6>
+              <Text align="left">Prize: Samsung Smart Phones</Text>
+            </Collapse>
 
-            <h5>Best User Experience Award</h5>
-            <Text>Samsung Smart Phones</Text>
+            <Collapse title={<Text h5>Most Innovative Award: <i>Regul8</i></Text>}>
+              <Text p align="left">
+                Reggy is an AI Assistant helping policymakers Giga/UNICEF navigate the complex telecom regulatory landscape when it comes to connecting schools to the internet.
+              </Text>
+              <Text p align="left">
+                The system follows the RAG framework. The system consists of the vector database generated from a huge number of scraped documents related to our application. The embeddings were generated using OpenAI model "text-embedding-05" and stored locally in a vector store using ChromaDB. The system uses a specialized prompt that fills in the context using data retrieved from the vector store based on the user question. This filled prompt is then forwarded to the LLM engine OpenAI "gpt-model-05" for final analysis and response. The prompt is engineered to force the LLM to use only the context to provide the answer and to keep the answer as clear and concise as possible. The prompt is also engineered to provide some extra information regarding the Internet Connectivity Penetration score of the specific country in question. The system exposes the LLM pipeline using REST API to our frontend written in React. The frontend allows the user to chat with the LLM as well as displaying relevant charts related to the data returned by the LLM.
+              </Text>
+              <h6 align="left">Osama Muhammad Khalid, Ali Farhoud, Fatima Tayeb</h6>
+              <Text align="left">Prize: Samsung Smart Phones</Text>
+            </Collapse>
 
-            <h5>Most Innovative Award</h5>
-            <Text>Samsung Smart Phones</Text>
+            <Collapse title={<Text h5>Wow Factor Award: <i>SNED</i></Text>}>
+              <Text p align="left">
+                Scribe is a developer tool to improve the code documentation process. This is targeted at professional software engineers/developers. We hope that we can provide the best assistive tool for documenting code automatically.
+              </Text>
+              <h6 align="left">Zan Naeem, Abdullah Khan, Sameer Ahmad</h6>
+              <Text align="left">Prize: Samsung Smart Phones</Text>
+            </Collapse>
 
-            <h5>Hacker's Choice Award</h5>
-            <Text>Apple Airpods</Text>
+            <Collapse title={<Text h5 align="center">Hacker's Choice Award: <i>Socratic Coders</i></Text>}>
+              <Text p align="left">
+                Our project unfolds in several progressive stages, beginning with the development of the "Socrate Chat" platform, which leverages the extensive knowledge base of the Stanford Encyclopedia of Philosophy. Next, we integrate advanced speech recognition technologies to enhance accessibility for visually impaired users, allowing for seamless interaction and engagement. The ultimate goal is to expand this platform's capabilities to the educational sector. By collaborating with publishers and libraries, we aim to utilize digital texts to craft specialized knowledge domains—ranging from mathematics and history to physics and biology—tailored to different educational levels. This will enable the creation of a personalized tutoring agent for blind students, designed to support their learning journey and help them achieve academic excellence alongside their peers.
+              </Text>
+              <h6 align="left">Adnan Mohammed, Shubh Agarwal, Sharon Kaari Koech, Cheng Hsin Liu</h6>
+              <Text align="left">Prize: Apple Airpods</Text>
+            </Collapse>
           </div>
         </div>
 
         <Spacer h={4} />
-        <a href="#judging-criteria">
+        {/* <a href="#judging-criteria">
           <Text h1 id="judging-criteria" align="center" style={{ color: palette.successLight }}>Judging Criteria</Text>
         </a>
         <Collapse.Group>
@@ -291,9 +329,9 @@ export default function HomePage() {
         <Text s>Details of our challenges and dataset can be found on our github repo: <a href="https://github.com/qcri/genaihack23">https://github.com/qcri/genaihack23</a></Text>
 
 
-        <Spacer h={4} />
+        <Spacer h={4} /> */}
 
-        <a href="#schedule">
+        {/* <a href="#schedule">
           <Text h1 id="schedule" style={{ color: palette.successLight }}>Schedule</Text>
         </a>
         <Spacer y={2} />
@@ -363,7 +401,7 @@ export default function HomePage() {
         </a>
         <Text>
           You can reach Qatar Computing Research Institute by car, and by metro. The closest Metro station is Education City Metro Station. You can use this <a href="https://maps.app.goo.gl/R56ws9vEWwW8WPjWA">link</a> for Google Maps.
-        </Text>
+        </Text> */}
 
         <Spacer h={8} />
         <Text h2 style={{ color: palette.successLight }}>Qatar Computing Research Institute</Text>
